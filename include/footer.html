@@ -1,0 +1,70 @@
+</td></tr></table></td>
+<script language="JavaScript" type="text/javascript">
+<!--
+ if ( screen.availWidth < 775 ){
+  maincontent.width=(screen.availWidth - 235 ) ;
+ }
+else{
+  maincontent.width = 540 ;
+}
+//-->
+</script>
+</tr>
+<?php
+// Standard Page Footer (slightly different on Home Page)
+?><tr>
+    <td align="center" valign="center"> <font size="-1"> 
+         <!-- <font color="#CC9933">
+         <b>Last Updated: <? 
+			if ( file_exists( $page_name ) ) {
+		 		echo date ("F j, Y ", filemtime( $page_name ) ) ; 
+			}
+			elseif( file_exists( str_replace ( ".html", ".inc.php" , $page_name ) ) )  {
+		 		echo date ("F j, Y ", filemtime( str_replace ( ".html", ".inc.php" , $page_name ) ) ) ; 
+			}
+			else {
+				echo date ("F j, Y ", filemtime( $current_script ) ) ; 
+			}
+		 // generates the last-modified date for the content file ?></b>
+         </font>
+         <br><br> -->
+      <a href="#top">Top of Page</a> |
+      <?php if ( $page_name != "include/home.html" ) { ?><a href="index.php?page=home">Home</a>  |
+      <?php } ?><a href="index.php?page=faq">FAQ</a> |
+      <a href="index.php?page=location">Contact Us/Directions</a> |
+      <a href="index.php?page=employers">Employers</a> <!-- |
+      <a href="printpage.php?page=<?php echo $page_val; ?>">Print this page</a> -->
+      <br>
+      Job Seekers: <a href="index.php?page=benefits">Benefits</a> |
+      <a href="index.php?page=membership">How To Join</a> |
+      <a href="index.php?page=workshops">Workshops</a> |
+      <a href="index.php?page=links">Useful Links</a>
+      <br>
+<?php
+if( $user_euid && $user_euid != "000000" && $admin >= 0 ){ 
+?>      <a href="member.php">Member Console</a> | <a href="logoff.php">Logoff</a>
+<?php 
+}
+else {
+?>      <a href="member.php">Members Access</a>
+<?php 
+} ?>
+    <br />
+      </font>
+      <hr>
+      <font size="-1.5">
+      <cite>
+         &#169; 2003 Experience Unlimited &#149; Anaheim, California<br>
+         Phone: (714) 518-2365 &#149; FAX: (714) 518-2387<br>
+         email: <a href="mailto:info@eu-connections.org">info@eu-connections.org</a>
+      </cite>
+      </font>
+   </td>
+</tr>
+
+<!-- End Main Table = Bottom of Page ------------------------------->
+</table>
+<!------------------------------------------------------------------>
+
+</body>
+</html>

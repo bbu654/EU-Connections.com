@@ -1,0 +1,20 @@
+<h2 align="left">Search Profiles</h2>
+
+	  <p><STRONG>Employers: bookmark this page!</STRONG></p>
+<?php
+	if ( $_POST["B2"] ) {
+		echo "<p>" . search_profiles( $_POST  ) . "</p>\n" ;
+	  	} ?>
+<p> You can search for new employees by keyword or by category. </p>
+<form action="index.php" method="post" name="profilesearch" id="profiles" target="_self">
+<input name="display" type="hidden" value="banner">
+<input name="page" type="hidden" value="profiles">
+<STRONG><font color="#0099CC">Keyword(s): </font></STRONG><input type="text" name="words" id="words" value="<?= $_POST["words"] ?>">&nbsp;<input type="submit" value="Find Matching Profiles" name="B2">
+<br /><br />
+Select one or more profile categories below:<br /><br />
+<input type=button value="Check All" onClick="checkAll()">&nbsp;<input type=button value="Uncheck All" onClick="uncheckAll()">&nbsp;<input type=button value="Switch All" onClick="switchAll()">&nbsp;<input type="submit" value="Find Matching Profiles" name="B2">
+<br /><br />
+<?php echo writeboxlist( $cat_array , $_POST ) ; ?><br />
+<input type=button value="Check All" onClick="checkAll()">&nbsp;<input type=button value="Uncheck All" onClick="uncheckAll()">&nbsp;<input type=button value="Switch All" onClick="switchAll()">&nbsp;<input type="submit" value="Find Matching Profiles" name="B2">
+<br /><br />
+</form>

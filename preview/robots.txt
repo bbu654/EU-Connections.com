@@ -1,0 +1,13 @@
+#this allows all search-engine spiders/robots
+User-agent: *
+#this bans robots from our cgi-bin
+Disallow: /cgi-bin/
+#this bans robots from our admin folder
+Disallow: /admin/
+#this bans robots from our (prototypical) calendaring scripts
+Disallow: /calendar/
+#this bans robots from our preview site
+Disallow: /preview/
+#this bans robots from our members-only folder
+Disallow: /console/
+

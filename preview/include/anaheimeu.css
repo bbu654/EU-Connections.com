@@ -1,0 +1,6 @@
+body { background: white; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: black; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { border: 0px; }
+table { border: 0px; }
+dt { font-weight: bold; }

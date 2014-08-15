@@ -1,0 +1,26 @@
+<?php
+// Standard Page Footer (slightly different on Home Page)
+?><font color="#CC9933" size="-1">
+         <b>Last Updated: <? 
+			if ( file_exists( $page_name ) ) {
+		 		echo date ("F j, Y ", filemtime( $page_name ) ) ; 
+			}
+			elseif( file_exists( str_replace ( ".html", ".inc.php" , $page_name ) ) )  {
+		 		echo date ("F j, Y ", filemtime( str_replace ( ".html", ".inc.php" , $page_name ) ) ) ; 
+			}
+			else {
+				echo date ("F j, Y ", filemtime( $current_script ) ) ; 
+			}
+		 // generates the last-modified date for the content file ?></b><br>
+        </font>
+      <hr>
+      <font size="-1.5">
+      <cite>
+         &#169; 2003 Experience Unlimited &#149; Anaheim, California<br>
+         Phone: (714) 518-2365 &#149; FAX: (714) 518-2387<br>
+         email: <a href="mailto:info@eu-connections.org">info@eu-connections.org</a>
+      </cite>
+      </font>
+
+</body>
+</html>

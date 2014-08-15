@@ -1,0 +1,13 @@
+<?php 
+	include("calendar/functions.inc.php");
+	javaScript() ;
+	$month = $HTTP_GET_VARS['month'];
+	$year = $HTTP_GET_VARS['year'];
+	// set month and year to present if month
+	// and year if not received from query string
+	$m = (!$month) ? date("n") : $month;
+	$y = (!$year) ? date("Y") : $year;
+	$scrollarrows = scrollArrows($m, $y);
+	$auth = auth();
+	include("calendar/calendardisplay.inc.php");
+?>

@@ -1,0 +1,60 @@
+body { background: #ffffff; font-family : Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+dd { text-decoration: none; }
+dt { font-weight : bold; }
+dt linkcat{ color: Navy; font-style : italic; font-size:  150%;  font-variant : small-caps; }
+dt linkname{ font-weight : bold; font-style : italic; }
+dd linkurl{ font-weight : bold; : }
+dd linkcom{ font-style : italic;  }
+img { border: 0px; }
+table { border: 0px; cellspacing: 0px; font-family : Verdana, Geneva, Arial, Helvetica, sans-serif; }
+table.main { height: 100%;  align: center; width: 100%; padding: 5px ; }
+table.main th { background: #0000FF; text-align: center; vertical-align: bottom; font-weight : bold; }
+table.main th.title { color: #FFFF00; font-size : 250%; font-weight : bolder; }
+table.main th.subtitle { color: #FFFF00; font-size : 125%; font-weight : bold; font-style : italic; }
+table.main th.menu { color: #FFFF00; width: 25%; }
+table.main th.menu a { 	color: #ffffff; }
+table.main td { background: #ffffff; color: #000000; align: center; vertical-align: middle; }
+table.main td.menu { background: #0000FF; color: #FFFF00; width: 25%; font-weight : bold; }
+table.main td.menu a { 	color: #ffffff; }
+table.main td.leftmenu a { 	color: #ffffff; }
+table.main td.body { height: 100%; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; text-align: center; vertical-align: top; }
+table.main td.foot { color: #000000;font: 8pt; height: 20px; padding: 5px; text-align: center; vertical-align: bottom; background : #ffffff; }
+table.inner { align: center; width: 95%; text-align: left; color: #000000; }
+table.inner a.img { border: 1px solid #9a6baa; }
+table.inner td { background: #ffffff; color: #000000; align: center; vertical-align: middle; }
+table.inner td.menu { background: #0000FF; color: #FFFF00; width: 25%; font-weight : bold; }
+table.inner td.menu a { 	color: #ffffff; }
+table.inner td.menu a:hover { text-decoration: underline; }
+table.inner a { color: #0000FF; }
+table.inner td.body { height: 100%; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; text-align: left; vertical-align: top; }
+table.inner td.foot { color: #000000; font-size : 75%; height: 20px; padding: 5px; text-align: center; vertical-align: bottom; background : #ffffff; }
+
+
+
+/**** month and year header at top of calendar ****/
+.date_header			{ font-size:16px; font-family:arial, helvetica; font-weight:bold ; background-color:#FFF  }
+/**** color and size of calendar cells.  ****/
+.day_cell				{ background-color:#EDECD8; height:80; width: 90; }
+.empty_day_cell			{ background-color:#EEEEEE; height:80; width: 90; }
+.today_cell				{ background-color:#F5F4ED; height:80; width: 90; }
+/**** day number in upper left corner of each cell ****/
+.day_number				{ font-size:10px; font-family:verdana, arial, helvetica; color:#000 }
+/**** title_txt is the text for each post on main page ****/
+.title_txt				{ font-size:10px; font-family:verdana, arial, helvetica; color:#000 }
+.title_txt A:link		{ color:#00F; text-decoration:underline }
+.title_txt A:active		{ color:#00F; text-decoration:underline }
+.title_txt A:visited	{ color:#00F; text-decoration:underline }
+.title_txt A:hover		{ color:#00F; text-decoration:underline }
+/**** time line under title text when event time given ****/
+.time_str				{ font-size:9px; font-family:arial, helvetica }
+/**** column headers or days of the week ****/
+.column_header			{ background-color:#2663E2; font-size:12px; font-family:arial, helvetica; color:#FFFFFF; font-weight:bold }
+/**** footprint text ****/
+.footprint				{ font-size:10px; font-family:verdana, arial, helvetica; color:#000; font-weight:bold }
+.footprint A			{ font-size:10px; font-family:verdana, arial, helvetica; color:#00F; font-weight:bold }
+td.fieldname{ 	font-weight : bold; }
+input.formtype { 	font-family : "Courier New", Courier, monospace; 	font-weight : bold; }
+textarea.formtype { 	font-family : "Courier New", Courier, monospace; 	font-weight : bold; }
+span.formtype {	font-family : "Courier New", Courier, monospace; }
